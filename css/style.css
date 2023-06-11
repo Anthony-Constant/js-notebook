@@ -1,0 +1,93 @@
+/*  background colour */
+body {
+    background-color: grey;
+}
+
+/* Position control */
+.container {
+    max-width: 50rem;
+    margin: 5rem auto;
+}
+
+/* Text area control */
+.add-item {
+    background-color: #6e6e6e;
+    padding: 5rem 0;
+    margin: 2rem auto;
+    border: 5px solid transparent;
+    border-radius: 10px; 
+    font-family: 'sofia';
+}
+
+
+/* Tick complete control */
+ol li button:first-child {
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    color: #23ff47;
+  
+    
+    
+    
+}
+/* Task complete control */
+ol li p {
+    content: "Completed";
+    margin-left: 1rem;
+    padding: 1px;
+    border-radius: .1rem;
+    
+  
+}
+
+
+/* Task background control */
+ol li {
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    background-color: #6e6e6e;
+    border-radius: .5rem;
+    padding: 1rem 1rem 1rem 4rem;
+    display: flex;
+    align-items: center;
+    counter-increment: counter;
+    position: relative;
+    overflow: hidden;
+    font-family: 'sofia';
+}
+
+
+/* Bin button control */
+ol li button {
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color:rgb(255,0,0);
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    
+}
+
+/* Index number control*/
+ol li::before {
+    content: counter(counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    background-color: #4267B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.centered-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+

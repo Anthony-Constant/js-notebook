@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Notebook</title>
+</head>
+
+<body>
+    <section class="todo-section">
+        <div class="container">
+            <div class="add-item">
+                <form action="" class="form-group" onsubmit="return false">
+                    <!-- Notebook Title -->
+                    <h2 class="font-weight-bold">Notebook</h2>
+
+                    <!-- Input for Note -->
+                    <input type="text" class="form-control" placeholder="Enter your note here to save it for later..."><br>
+                    
+                    <!-- Buttons -->
+                    <button class="btn btn-primary">Create Note</button>
+                    <button class="btn btn-danger" onclick="clearNote()">Clear All</button>
+                </form>
+            </div>
+            <ol class="todo-list">
+                <hr>
+            </ol>
+            <hr>
+
+            <!-- Footer -->
+            <footer class="fixed-bottom centered-footer">
+                <p class="text-center">
+                    <small>
+                        Developed by <a href="https://anthonyconstant.co.uk/">Anthony Constant</a>
+                    </small>
+                </p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Custom Javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+<!--
+	-------- www.anthonyconstantco.uk --------
+	|                                     |
+	|   </> with <3 by Anthony Constant   |
+	|                                     |
+	-------- www.anthonyconstant.co.uk --------
+-->
